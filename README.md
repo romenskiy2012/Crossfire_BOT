@@ -3,10 +3,15 @@
 Для запуска требуется создать 1 базу данных и 1 пользователя который будет иметь полный доступ к ней.
 
 $ mysql -p -u root
+
 $ CREATE USER 'Crossfire_bot'@'localhost' IDENTIFIED BY '';
+
 $ CREATE DATABASE Crossfire_P CHARACTER SET utf8 COLLATE utf8_general_ci;
+
 $ GRANT ALL PRIVILEGES ON Crossfire_P.* TO 'Crossfire_bot'@'localhost';
+
 $ FLUSH PRIVILEGES;
+
 $ exit
 
 Бот опирается на таблицу "role", после первого запуска он создаст её сам, вам требуется создать новую строку для вашего сервера, и указать соотвецтвуюшие ID.
